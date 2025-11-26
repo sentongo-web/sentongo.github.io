@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="{{ '/' | relative_url }}">
+          <span class="logo-mark">P</span>
+          <span class="logo-text">{{ site.title }}</span>
+        </a>
+        <nav class="nav">
+          <a href="{{ '/' | relative_url }}">Home</a>
+          <a href="{{ '/blog/' | relative_url }}">Blog</a>
+          <a href="{{ '/about/' | relative_url }}">About</a>
+          <a href="{{ '/assets/cv/Paul_CV.pdf' | relative_url }}" target="_blank" rel="noopener">
+            CV
+          </a>
+        </nav>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+          🌙
+        </button>
+      </div>
+    </header>
+
+    <main class="site-main">
+      <div class="container">
+        {{ content }}
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© {{ site.time | date: '%Y' }} {{ site.author }} · Built with GitHub Pages & Jekyll</p>
+        <p>
+          <a href="https://github.com/sentongo-web" target="_blank" rel="noopener">
+            GitHub
+          </a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="{{ '/assets/js/theme-toggle.js' | relative_url }}"></script>
+  </body>
+</html>

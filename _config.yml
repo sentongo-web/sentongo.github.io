@@ -1,0 +1,10 @@
+title: "Paul Sentongo"
+description: "Data Scientist • Analytics • AI Ethics"
+author: "Paul Sentongo"
+
+# Your GitHub username:
+url: "https://sentongo.github.io"
+baseurl: ""   # leave empty for user sites
+
+markdown: kramdown
+permalink: /blog/:title/

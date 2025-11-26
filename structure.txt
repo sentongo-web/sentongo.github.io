@@ -1,0 +1,20 @@
+yourusername.github.io/
+├── _config.yml
+├── index.md
+├── blog.md
+├── about.md
+├── _layouts
+│   ├── default.html
+│   ├── home.html
+│   └── post.html
+├── _includes
+│   └── head.html
+├── _posts
+│   └── 2025-11-26-hello-world.md
+├── assets
+│   ├── css
+│   │   └── style.css
+│   ├── js
+│   │   └── theme-toggle.js
+│   └── cv
+│       └── Paul_CV.pdf    (My CV file )
